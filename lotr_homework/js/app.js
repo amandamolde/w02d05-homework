@@ -93,6 +93,17 @@ const makeHobbits = () => {
 
   // hint: get 'The-Shire' by using its id
 
+  const $unorderedList = $('<ul/>');
+
+  $('#The-Shire').append($unorderedList);
+
+  for (i = 0; i < hobbits.length; i++) {
+    const $listItem = $('<li/>');
+    $listItem.text(hobbits[i]);
+    $listItem.addClass('hobbit');
+    $unorderedList.append($listItem);
+  }
+
 };
 
 // COMMIT YOUR WORK
