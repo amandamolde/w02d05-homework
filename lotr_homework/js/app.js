@@ -278,6 +278,12 @@ const hornOfGondor = () => {
 
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
 
+  alert("The Horn of Gondor has been blown");
+
+  $('li:contains("Boromir")').css('text-decoration', 'line-through');
+
+  $('li:contains("The Uruk-hai")').remove();
+
 };
 
 // COMMIT YOUR WORK
