@@ -141,6 +141,17 @@ const makeBaddies = () => {
   // 2. give each of the baddies a class of "baddy"
 
   // 3. remember to append them to Mordor
+
+  $baddiesList = $('<ul></ul>');
+
+  $('#Mordor').append($baddiesList);
+
+  for(i = 0; i < baddies.length; i++) {
+    const $baddieItem = $('<li/>');
+    $baddieItem.text(baddies[i]);
+    $baddieItem.addClass('baddy');
+    $baddiesList.append($baddieItem);
+  }
 };
 
 // COMMIT YOUR WORK
