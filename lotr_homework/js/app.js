@@ -234,6 +234,16 @@ const forgeTheFellowShip = () => {
 
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
 
+  $theFellowship = $('<div id="the-fellowship"></div>');
+
+  $theFellowship.append('<h1>The Fellowship</h1>');
+
+  $('#middleEarth').append($theFellowship);
+
+  $('#Rivendell').children('ul').clone().appendTo($('#the-fellowship'));
+
+  $('aside').children('ul').clone().appendTo($('#the-fellowship'));
+
 };
 
 // COMMIT YOUR WORK
