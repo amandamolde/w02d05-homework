@@ -214,6 +214,8 @@ const beautifulStranger = () => {
 
   // hint: You can get a list of elements by tag name, such as 'aside'
 
+  $('li:contains("Strider")').text("Aragorn");
+
 };
 
 // COMMIT YOUR WORK
