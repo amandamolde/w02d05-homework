@@ -240,9 +240,9 @@ const forgeTheFellowShip = () => {
 
   $('#middleEarth').append($theFellowship);
 
-  $('#Rivendell').children('ul').clone().appendTo($('#the-fellowship'));
+  $('#Rivendell').children('ul').appendTo($('#the-fellowship'));
 
-  $('aside').children('ul').clone().appendTo($('#the-fellowship'));
+  $('aside').children('ul').appendTo($('#the-fellowship'));
 
 };
 
@@ -259,6 +259,8 @@ const theBalrog = () => {
   // 2. add a class "the-white" to this element
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
+
+  $('li:contains("Gandalf")').text("Gandalf the White").addClass("the-white");
 
 };
 
