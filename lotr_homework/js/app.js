@@ -122,13 +122,9 @@ const keepItSecretKeepItSafe = () => {
 
   // when you think you have given Frodo the ring, check in your Elements tab
 
-  const $myPrecious = $('<div id="the-ring"><div/>');
+  $myPrecious = $('<div id="the-ring"></div>');
 
-  $('li').first().append($myPrecious);
-
-  // Use .first
-
-
+  $('li:contains("Frodo")').append($myPrecious);
 
 };
 
