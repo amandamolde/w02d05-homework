@@ -167,6 +167,22 @@ const makeBuddies = () => {
   // 2. display an unordered list of buddies in the aside
 
   // 3. give each of the buddies a class of "buddy"
+ 
+  const $aside = $('<aside></aside>');
+
+  $aside.insertAfter("#Mordor");
+
+  $buddiesList = $('<ul></ul>');
+
+  $aside.append($buddiesList);
+
+  for (i = 0; i < buddies.length; i++) {
+    const $buddyItem = $('<li/>');
+    $buddyItem.text(buddies[i]);
+    $buddyItem.addClass('buddy');
+    $buddiesList.append($buddyItem);
+  }
+
 
 };
 
