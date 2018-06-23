@@ -93,15 +93,15 @@ const makeHobbits = () => {
 
   // hint: get 'The-Shire' by using its id
 
-  const $unorderedList = $('<ul/>');
+  const $hobbitsList = $('<ul/>');
 
-  $('#The-Shire').append($unorderedList);
+  $('#The-Shire').append($hobbitsList);
 
   for (i = 0; i < hobbits.length; i++) {
-    const $listItem = $('<li/>');
-    $listItem.text(hobbits[i]);
-    $listItem.addClass('hobbit');
-    $unorderedList.append($listItem);
+    const $hobbitItem = $('<li/>');
+    $hobbitItem.text(hobbits[i]);
+    $hobbitItem.addClass('hobbit');
+    $hobbitsList.append($hobbitItem);
   }
 
 };
@@ -197,6 +197,8 @@ const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
 
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
+
+  $('#Rivendell').append($('#The-Shire').children('ul'));
 
 };
 
