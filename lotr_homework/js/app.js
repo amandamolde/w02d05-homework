@@ -341,6 +341,12 @@ const thereAndBackAgain = () => {
 
   // 3. Move all the hobbits back to the shire
 
+  $('#Gollum').remove();
+
+  $('.baddy').remove();
+
+  $('.hobbit').detach().appendTo('#The-Shire');
+
 };
 
 // COMMIT YOUR WORK
