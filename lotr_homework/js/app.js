@@ -298,6 +298,11 @@ const itsDangerousToGoAlone = () => {
 
   // 2. add a div with an id of 'mount-doom' to Mordor
 
+  $('li:contains("Frodo")').detach().appendTo('#Mordor');
+  $('li:contains("Samwise")').detach().appendTo('#Mordor');
+
+  $('#Mordor').append('<div id="mount-doom"></div>');
+
 };
 
 // COMMIT YOUR WORK
