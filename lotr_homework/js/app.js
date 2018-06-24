@@ -319,6 +319,12 @@ const weWantsIt = () => {
 
   // 3. Move Gollum into Mount Doom
 
+  $('#Mordor').append('<div id="Gollum"></div>');
+
+  $('#the-ring').detach().appendTo('#Gollum');
+
+  $('#Gollum').detach().appendTo('#mount-doom');
+
 };
 
 // COMMIT YOUR WORK
